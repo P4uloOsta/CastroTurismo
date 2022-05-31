@@ -8,6 +8,8 @@ import java.io.Serializable;
  * @author paulo.4904
  *
  */
+
+
 public class Seguradora implements Serializable{
 
 	/**
@@ -108,6 +110,12 @@ public class Seguradora implements Serializable{
 		} else if (!telefone.equals(other.telefone))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Seguradora [id=%s, nome=%s, corretor=%s, telefone=%s, getClass()=%s, toString()=%s]", id,
+				nome, corretor, telefone, getClass(), super.toString());
 	}
 	
 	

@@ -3,12 +3,15 @@
  */
 package br.com.paulo.veiculo;
 import java.io.Serializable;
+
+import lombok.ToString;
 /**
  * Classe onibus
  * @author paulo.4904
  *
  */
-public class Onibus implements Serializable{
+
+public class Onibus extends Veiculo implements Serializable{
 
 	/**
 	 * 
@@ -18,6 +21,8 @@ public class Onibus implements Serializable{
 	private Integer poltrona;
 	
 	private Veiculo veiculo;
+	
+	private Seguradora seguradora; 
 
 	/**
 	 * 
@@ -47,10 +52,12 @@ public class Onibus implements Serializable{
 		return serialVersionUID;
 	}
 
+	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
+		int result = super.hashCode();
 		result = prime * result + ((poltrona == null) ? 0 : poltrona.hashCode());
 		result = prime * result + ((veiculo == null) ? 0 : veiculo.hashCode());
 		return result;
@@ -60,7 +67,7 @@ public class Onibus implements Serializable{
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (!super.equals(obj))
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
@@ -77,6 +84,17 @@ public class Onibus implements Serializable{
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return String.format(
+				"Onibus [poltrona=%s, veiculo=%s, seguradora=%s, getPlaca()=%s, getId()=%s, getRenavam()=%s, getQuilometragem()=%s, getSeguradora()=%s, getEstaSegurado()=%s, getApolice()=%s, getNumeroEixos()=%s, getCombustivel()=%s, getClass()=%s, toString()=%s]",
+				poltrona, veiculo, seguradora, getPlaca(), getId(), getRenavam(), getQuilometragem(), getSeguradora(),
+				getEstaSegurado(), getApolice(), getNumeroEixos(), getCombustivel(), getClass(), super.toString());
+	}
+
+
+
 	
 	
 

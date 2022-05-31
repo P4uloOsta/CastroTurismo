@@ -10,7 +10,7 @@ import br.com.paulo.domain.pessoal.Passageiro;
  * @author paulo.4904
  *
  */
-public class Passagem implements Serializable {
+public class Passagem extends Passageiro implements Serializable {
 
 	/**
 	 * 

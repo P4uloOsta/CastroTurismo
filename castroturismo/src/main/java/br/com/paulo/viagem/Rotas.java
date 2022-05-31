@@ -10,7 +10,7 @@ import br.com.paulo.veiculo.Onibus;
  *
  */
 
-public class Rotas implements Serializable {
+public class Rotas extends Rodoviaria implements Serializable {
 
 	/**
 	 * 
@@ -158,6 +158,13 @@ public class Rotas implements Serializable {
 		} else if (!rodoviaria.equals(other.rodoviaria))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return String.format(
+				"Rotas [id=%s, origem=%s, rodoviaria=%s, quilometragem=%s, precoPassagem=%s, motorista=%s, onibus=%s, getClass()=%s, toString()=%s]",
+				id, origem, rodoviaria, quilometragem, precoPassagem, motorista, onibus, getClass(), super.toString());
 	}
 	
 	

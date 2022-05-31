@@ -5,7 +5,7 @@ import java.io.Serializable;
  * @author paulo.4904
  *
  */
-public class Passageiro implements Serializable {
+public class Passageiro  extends PessoaFisica  implements Serializable {
 
 	/**
 	 * 
@@ -106,6 +106,16 @@ public class Passageiro implements Serializable {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return String.format(
+				"Passageiro [NumeroCartao=%s, vencimento=%s, seguranca=%s, pessoafisica=%s, getCPF()=%s, getRG()=%s, getOrgaoEmissor()=%s, getNascimento()=%s, getId()=%s, getNome()=%s, getTelefoneCelular()=%s, getEmail()=%s, getLogradouro()=%s, getComplemento()=%s, getNumero()=%s, getCidade()=%s, getClass()=%s, toString()=%s]",
+				NumeroCartao, vencimento, seguranca, pessoafisica, getCPF(), getRG(), getOrgaoEmissor(),
+				getNascimento(), getId(), getNome(), getTelefoneCelular(), getEmail(), getLogradouro(),
+				getComplemento(), getNumero(), getCidade(), getClass(), super.toString());
+	}
+
 	
 	
 	

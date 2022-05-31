@@ -2,11 +2,14 @@ package br.com.paulo.seguranca;
 import java.io.Serializable;
 
 import br.com.paulo.domain.pessoal.Funcionario;
+import lombok.ToString;
 
+
+@ToString
 public class Login implements Serializable {
 
 	/**
-	 * 
+	 * Classe de segurança login
 	 */
 	private static final long serialVersionUID = 1L;
 	

@@ -5,7 +5,7 @@ import java.io.Serializable;
  * @author paulo.4904
  *
  */
-public abstract class Veiculo implements Serializable {
+public abstract class Veiculo  implements Serializable {
 
 	/**
 	 * 
