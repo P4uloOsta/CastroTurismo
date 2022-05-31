@@ -9,7 +9,7 @@ import	java.io.Serializable;
  * @author paulo.4904
  *
  */
-public class Menores implements Serializable{
+public class Menores  implements Serializable{
 
 	/**
 	 * 

@@ -6,7 +6,7 @@ import java.util.Date;
  * @author paulo.4904
  *
  */
-public class PessoaJuridica implements Serializable{
+public class PessoaJuridica extends Pessoa implements Serializable{
 
 	
 	/**

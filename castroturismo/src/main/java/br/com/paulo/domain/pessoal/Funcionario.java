@@ -6,7 +6,7 @@ import java.io.Serializable;
  *
  */
 
-public class Funcionario implements Serializable {
+public class Funcionario extends PessoaFisica implements Serializable {
 
 	/**
 	 * 

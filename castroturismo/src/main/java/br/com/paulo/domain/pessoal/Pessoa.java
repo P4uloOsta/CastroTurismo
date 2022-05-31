@@ -28,7 +28,7 @@ public abstract class Pessoa implements Serializable {
 	
 	private Integer numero;
 	
-	private Cidade cidade;
+	private String cidade;
 	
 	private Integer id;
 	
@@ -155,12 +155,12 @@ public abstract class Pessoa implements Serializable {
 		this.numero = numero;
 	}
 
-	public Cidade getCidade() {
+	public String getCidade() {
 		return cidade;
 	}
 
-	public void setCidade(Cidade cidade) {
-		this.cidade = cidade;
+	public void setCidade(String string) {
+		this.cidade = string;
 	}
 
 	public static long getSerialversionuid() {

@@ -5,4 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>CastroTurismo</name>
   <description>Agencia de turismo em Castro</description>
+  
+  <dependencies>
+ <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.0.2.Final</version>
+    <type>pom</type>
+</dependency>
+  </dependencies>
 </project>

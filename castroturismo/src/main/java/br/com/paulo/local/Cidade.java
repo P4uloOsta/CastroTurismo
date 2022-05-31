@@ -5,7 +5,7 @@ import java.io.Serializable;
  * @author paulo.4904
  *
  */
-public class Cidade implements Serializable {
+public class Cidade extends Estado implements  Serializable {
 	
 	@Override
 	public int hashCode() {
@@ -74,7 +74,13 @@ public class Cidade implements Serializable {
 	public void setEstado(Estado estado) {
 		this.estado = estado;
 	}
+	@Override
+	public String toString() {
+		return String.format("Cidade [id=%s, nome=%s, estado=%s, getPais()=%s, toString()=%s, getClass()=%s]", id, nome,
+				estado, getPais(), super.toString(), getClass());
+	}
 	
+		
 	
 
 }

@@ -7,7 +7,7 @@ import java.util.Date;
  *
  */
 
-public class PessoaFisica implements Serializable {
+public class PessoaFisica  extends Pessoa  implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	private	Integer CPF;

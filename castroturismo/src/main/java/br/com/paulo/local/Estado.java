@@ -6,7 +6,7 @@ import java.io.Serializable;
  *
  */
 
-public class Estado  implements Serializable {
+public class Estado extends Pais implements Serializable {
 		private static final long serialVersionUID=1L;
 		private Integer id;
 		private String nome;
@@ -70,6 +70,10 @@ public class Estado  implements Serializable {
 			} else if (!pais.equals(other.pais))
 				return false;
 			return true;
+		}
+		@Override
+		public String toString() {
+			return String.format("Estado [id=%s, nome=%s, pais=%s]", id, nome, pais);
 		}
 		
 		

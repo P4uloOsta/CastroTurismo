@@ -17,11 +17,8 @@ public  class Pais implements Serializable {
 	private String nome;
 
 	/**
-	 * @param id
-	 * @param nome
-	 * metodo construtor da classe Pais
 	 */
-	public Pais(Integer id, String nome) {
+	public Pais() {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -72,6 +69,11 @@ public  class Pais implements Serializable {
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Pais [id=%s, nome=%s]", id, nome);
 	}
 	
 

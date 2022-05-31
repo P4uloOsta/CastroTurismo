@@ -6,7 +6,7 @@ import java.io.Serializable;
  * @author paulo.4904
  *
  */
-public class Motorista implements Serializable{
+public class Motorista extends Funcionario implements Serializable{
 
 	/**
 	 * 
@@ -95,6 +95,18 @@ public class Motorista implements Serializable{
 		} else if (!funcionario.equals(other.funcionario))
 			return false;
 		return true;
+	}
+	public void setNome(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public String toString() {
+		return String.format(
+				"Motorista [CNH=%s, categoriaCNH=%s, EAR=%s, funcionario=%s, getNumeroRegistro()=%s, getEstaAtivo()=%s, getPessoafisica()=%s, getCPF()=%s, getRG()=%s, getOrgaoEmissor()=%s, getNascimento()=%s, getId()=%s, getNome()=%s, getTelefoneCelular()=%s, getEmail()=%s, getLogradouro()=%s, getComplemento()=%s, getNumero()=%s, getCidade()=%s, getClass()=%s, toString()=%s]",
+				CNH, categoriaCNH, EAR, funcionario, getNumeroRegistro(), getEstaAtivo(), getPessoafisica(), getCPF(),
+				getRG(), getOrgaoEmissor(), getNascimento(), getId(), getNome(), getTelefoneCelular(), getEmail(),
+				getLogradouro(), getComplemento(), getNumero(), getCidade(), getClass(), super.toString());
 	}
 	
 
